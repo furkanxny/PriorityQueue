@@ -1,6 +1,9 @@
+/**
+ * House class with owner and value fields.
+ *
+ */
 public class House {
 
-    //Member Variables
     private String owner;
     private int value;
 
@@ -50,5 +53,10 @@ public class House {
     public boolean equals(Object obj) {
         House tempHouse = (House) obj;
         return this.owner.equals(tempHouse.getOwner());
+    }
+
+    @Override
+    public String toString() {
+        return "Owner: " + owner + ", Value: " + value;
     }
 }
